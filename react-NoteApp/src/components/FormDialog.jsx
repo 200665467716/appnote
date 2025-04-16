@@ -194,7 +194,7 @@ export default function FormDialog() {
 } */
 
 
-  import * as React from 'react';
+import * as React from 'react';
 import { Button, TextField, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Fab } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -227,7 +227,7 @@ export default function FormDialog({ onSubmit }) {
 
   const handleSubmit = () => {
     if (note.title.trim() && note.details.trim()) {
-      onSubmit(note.title, note.details);
+      onSubmit(note);
       setNote({ id: Date.now(), title: '', details: '' }); // Réinitialisation du formulaire
       setOpen(false);
     }

@@ -142,7 +142,7 @@ const App = () => {
               </Grid>
             ))}
           </Grid>
-          <FormDialog setNotes={updateNotes} />
+          <FormDialog onSubmit={updateNotes} />
         </Container>
       </ThemeProvider>
     </AppProvider>
